@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(1, 1, 2);
+  font-family: 'Roboto', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .liItemMb {
+    @apply cursor-pointer hover: text-blue-500 h-11;
+  }
+
+}
