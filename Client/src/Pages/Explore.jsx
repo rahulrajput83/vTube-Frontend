@@ -54,10 +54,10 @@ function Explore() {
             <div className='w-full grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
                 {Items.map((item, index) => (
                     <Link to={`/explore${item.link}`} className='w-full flex flex-col justify-center items-center rounded px-3 text-stone-400 cursor-pointer' key={`explore-${index}`}>
-                        <div class="flex w-full justify-start items-center">
-                            <div class="px-6 flex flex-col py-4 justify-start items-center rounded-lg shadow-lg bg-white w-full">
+                        <div className="flex w-full justify-start items-center">
+                            <div className="px-6 flex flex-col py-4 justify-start items-center rounded-lg shadow-lg bg-white w-full">
                                 <img src={item.icon} alt='' className='mb-4 w-[2rem] m-auto' />
-                                <h5 class="text-gray-900 text-xs sm:text-sm md:text-base lg:text-lg leading-tight font-medium mb-2">{item.name}</h5>
+                                <h5 className="text-gray-900 text-xs sm:text-sm md:text-base lg:text-lg leading-tight font-medium mb-2">{item.name}</h5>
                             </div>
                         </div>
                     </Link>
