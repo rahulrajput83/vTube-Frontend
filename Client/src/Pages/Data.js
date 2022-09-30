@@ -6,6 +6,7 @@ export const data = [
         channelName: 'Thapa Technical',
         channelIcon: 'https://yt3.ggpht.com/ytc/AMLnZu_nulu6hJZiT4KVNfc1DEMh2AqiqPx06z_bViTnYw=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 2451,
+        tag: 'Trending'
     },
     {
         _id: '2',
@@ -14,6 +15,7 @@ export const data = [
         channelName: 'ZAINKEEPCODE',
         channelIcon: 'https://yt3.ggpht.com/zWgsdxUBVdEmCJUReDmF-s2HAPkdXttVVeuajRAj9kNpEMpOCbrucJZ3hlCkxUNmwQ4xdic-o3U=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 54164,
+        tag: 'Music'
     },
     {
         _id: '3',
@@ -22,6 +24,7 @@ export const data = [
         channelName: 'FilmSpot Trailer',
         channelIcon: 'https://yt3.ggpht.com/ytc/AMLnZu9fNOmZs3HjYNrajXZSn2EnI5wIXGR2DIREDnSqOQ=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 3005,
+        tag: 'Movies'
     },
     {
         _id: '4',
@@ -30,6 +33,7 @@ export const data = [
         channelName: 'CodingNepal',
         channelIcon: 'https://yt3.ggpht.com/4PxMvFQL_cZRSXUwsh5eMSehl22GAejM2BY1Kix2gzrmeBOnaSzya45fFVh7I67yzmWWrWkQKQ=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 10,
+        tag: 'Sport'
     },
     {
         _id: '5',
@@ -38,6 +42,7 @@ export const data = [
         channelName: 'Coding Snow',
         channelIcon: 'https://yt3.ggpht.com/Xyn-8XLC8fuuosFDcDVYxA4WAEHQQK8zQf2VgKaJu_dNBQ3f6l2Q_yNDgaZRMAE7_w6sdyuP-A=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 30000,
+        tag: 'Education'
     },
     {
         _id: '6',
@@ -46,6 +51,7 @@ export const data = [
         channelName: 'TIKTOK Trending',
         channelIcon: 'https://yt3.ggpht.com/ytc/AMLnZu_g-2fje9w2Ab1yloEchrxMDxSP0p6qkTpcrAE85A=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 2500,
+        tag: 'Gaming'
     },
     {
         _id: '7',
@@ -54,6 +60,7 @@ export const data = [
         channelName: 'T-Series',
         channelIcon: 'https://yt3.ggpht.com/l8CPpluol0brprHG9dZMaD7AJ2XrngeNs_oy85XUqdkLi5E3PhCu7VmP_HsRM8yUk-suL-7ImQ=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 2030,
+        tag: 'News'
     },
     {
         _id: '8',
@@ -62,5 +69,6 @@ export const data = [
         channelName: 'Cryptical Coder',
         channelIcon: 'https://yt3.ggpht.com/73QqA_A9cnARXsNcq8jgxg5BlGcR6ZQAVabv2X-9rgxo6Hi7yhojeW2ZRmMeoB1MpJo6I7VL=s88-c-k-c0x00ffffff-no-rj',
         subscriber: 1000,
+        tag: 'Fashion & Beauty'
     }
 ]

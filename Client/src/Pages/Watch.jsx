@@ -7,7 +7,6 @@ import Recommendation from '../Components/Watch/Recommendation';
 
 
 
-
 function Watch() {
   const { id } = useParams();
   const [video, setVideo] = useState([])
