@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom'
+import About from '../Components/Channel/About';
 import Menu from '../Components/Menu/Menu'
 import { data } from './Data';
 
@@ -52,13 +53,12 @@ function Channel() {
                             </div>
                         ))}
                     </div>
-                    <div className='w-full grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
-                        <div className=''></div>
-                    </div>
+                    <About />
                 </div>
-                : null}
+                : null
+}
 
-        </div>
+        </div >
     )
 }
 

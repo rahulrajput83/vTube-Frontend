@@ -21,7 +21,7 @@ function Menu() {
         <div className='w-full flex flex-col justify-start items-start'>
             {
                 MenuData.map((data, index) => (
-                    <Link to={data.link} key={`menu_${index}`} className='w-full font-medium mt-8 hover:text-white cursor-pointer text-[#606063] text-sm grid grid-cols-1'>
+                    <Link to={data.link} key={`menu_${index}`} className='w-full font-medium mt-8 hover:text-white cursor-pointer text-stone-400 text-sm grid grid-cols-1'>
                         <data.icon className='text-xl mx-auto' />
                         <div className='mx-auto'>{data.name}</div>
                     </Link>
