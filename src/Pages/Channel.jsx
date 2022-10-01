@@ -46,10 +46,9 @@ function Channel() {
                     </div>
                     <div className='scrollbar-hide bg-transparent overflow-auto my-8 flex py-4'>
                         {menu.map((item, index) => (
-                            <div key={`menu-${index}`} onClick={() => setUnderline(index)} className={`w-44 items-center cursor-pointer flex flex-col text-white px-2 mx-2`}>
+                            <div key={`menu-${index}`} onClick={() => setUnderline(index)} className={`w-fit items-center cursor-pointer flex flex-col text-white mx-0 sm:mx-4`}>
                                 <span className='mb-1 text-center w-full'>{item}</span>
-                                {index === underline ? <span className='h-[3px] w-full bg-blue-900'></span> : null}
-
+                                {index === underline ? <span className='h-[3px] w-32 bg-blue-900'></span> : <span className='w-32'></span>}
                             </div>
                         ))}
                     </div>
