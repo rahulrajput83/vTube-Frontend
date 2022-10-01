@@ -44,9 +44,13 @@ function Channel() {
                         </div>
                         <button onClick={handleSubscribe} className={`px-4 text-white py-2 rounded text-sm ${subscribed ? 'bg-gray-900' : 'bg-indigo-900'} uppercase`}>{subscribed ? 'Subscribed' : 'subscribe'}</button>
                     </div>
-                    <div className='w-full scrollbar-hide bg-transparent overflow-auto my-2 flex py-4'>
+                    <div className='scrollbar-hide bg-transparent overflow-auto my-8 flex py-4'>
                         {menu.map((item, index) => (
-                            <div key={`menu-${index}`} onClick={() => setUnderline(index)} className={`cursor-pointer text-white ${index === underline ? 'underline' : ''} mx-12`}>{item}</div>
+                            <div key={`menu-${index}`} onClick={() => setUnderline(index)} className={`w-44 items-center cursor-pointer flex flex-col text-white px-2 mx-2`}>
+                                <span className='mb-1 text-center w-full'>{item}</span>
+                                {index === underline ? <span className='h-[3px] w-full bg-blue-900'></span> : null}
+
+                            </div>
                         ))}
                     </div>
                     <div className='w-full grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
@@ -59,4 +63,4 @@ function Channel() {
     )
 }
 
-export default Channel
+export default Channel;
