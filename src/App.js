@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from "./Components/Navbar/Navbar";
+import Channel from "./Pages/Channel";
 import Explore from "./Pages/Explore";
 import ExploreVideo from "./Pages/ExploreVideo";
 import Home from "./Pages/Home";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/watch/:id" element={<Watch />} />
         <Route path="/explore" element={<Explore />} />
         <Route path='/explore/:name' element={<ExploreVideo />} />
+        <Route path='/c/:channelName' element={<Channel />} />
       </Routes>
     </BrowserRouter>
   );

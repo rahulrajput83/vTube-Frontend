@@ -4,6 +4,7 @@ import LinesEllipsis from 'react-lines-ellipsis';
 import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC'
 import { useState } from 'react';
 import CommentOption from './CommentOption';
+import { Link } from 'react-router-dom';
 const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis);
 
 const comment = [
@@ -97,12 +98,12 @@ function Video(props) {
             <div className='w-full py-3 flex justify-center items-center mt-1 px-1'>
                 <img src={video[0].channelIcon} alt='' className='rounded-full mr-3 w-9 bg-transparent' />
                 <div className='w-full text-stone-400 flex flex-col justify-center'>
-                    <div className='text-xs font-medium'>{video[0].channelName}</div>
+                    <Link to={`/c/${video[0].channelName}`} className='text-xs w-fit font-medium'>{video[0].channelName}</Link>
                     <div className='text-xs font-medium'>{video[0].subscriber >= 1000 ? `${parseFloat(video[0].subscriber / 1000).toFixed(1)}K` : video[0].subscriber}
                         <span className='ml-2'>subscribers</span>
                     </div>
                 </div>
-                <button onClick={handleSubscribe} className='px-4 py-2 rounded text-sm bg-indigo-900 hover:bg-indigo-800 uppercase'>{subscribed ? 'Subscribed' : 'subscribe'}</button>
+                <button onClick={handleSubscribe} className={`px-4 py-2 rounded text-sm ${subscribed ? 'bg-gray-900' : 'bg-indigo-900'} uppercase`}>{subscribed ? 'Subscribed' : 'subscribe'}</button>
             </div>
             <div className='w-full flex mt-4 flex-col' >
                 <div className='py-1 px-3 border text-sm border-stone-50 flex justify-between items-center'>
